@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <h1>Registro de Pacientes <span>Veterinaria</span></h1>
+    <div class="vr_container">
+      <div class="vr_content">
+        <h2>Registro del paciente</h2>
+        <p class="vr_form_text">Formulario de registro</p>
+        <form id="appointment_form">
+          <div class="appointment_field">
+            <label for="patient"> Nombre Paciente: </label>
+            <input
+              class=""
+              type="text"
+              id="patient"
+              placeholder="Nombre Paciente"
+              name="patient"
+            />
+          </div>
+
+          <div class="appointment_field">
+            <label for="owner" class=""> Nombre Propietario: </label>
+            <input
+              class=""
+              type="text"
+              id="owner"
+              placeholder="Nombre Propietario"
+              name="owner"
+            />
+          </div>
+          <div class="appointment_field">
+            <label for="email" class=""> Email Contacto </label>
+            <input
+              class=""
+              type="email"
+              id="email"
+              placeholder="E-mail Contacto"
+              name="email"
+            />
+          </div>
+
+          <div class="appointment_field">
+            <label for="date" class=""> Fecha Alta </label>
+            <input class="" type="date" id="date" name="date" />
+          </div>
+
+          <div class="appointment_field">
+            <label for="symptoms" class=""> Síntomas </label>
+            <textarea
+              class=""
+              id="symptoms"
+              name="symptoms"
+              placeholder="Síntomas del Paciente"
+            ></textarea>
+          </div>
+          <input type="submit" value="Registrar Paciente" class="vr_submit" />
+        </form>
+      </div>
+      <div class="vr_content">
+        <h2>Lista de los pacientes registrados</h2>
+        <p class="vr_form_text">Lista de registros</p>
+        <div id="appointment">No hay registros</div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
